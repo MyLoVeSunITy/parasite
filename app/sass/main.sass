@@ -1,0 +1,846 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid 
+				border-color: red
+			&:required:valid
+				border-color: green
+.spacing
+	padding: 0
+.img-responsive
+	display: block 
+	max-width: 100% 
+	height: auto 
+	margin: auto
+.img-header
+	max-width: 100%
+	height: auto
+	margin-right: 1rem
+.img-header1
+	max-width: 100%
+	height: auto
+	margin-left: .5rem
+	margin-right: 1.5rem
+
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+.headerow
+	width: 80%
+	margin: auto
+	padding: 40px 0 30px 0
+	display: flex
+	justify-content: flex-start
+
+	
+.headerline
+	display: inline-flex
+	justify-content: start
+	align-items: center
+.headerline1
+	display: inline-flex
+	justify-content: start
+	align-items: center
+.headerline2
+	display: inline-flex
+	justify-content: start
+	align-items: center
+
+.headerp
+	font-size: 1rem
+	font-family: 'RobotoBoldCondensed'
+	margin: 0
+	color: #336600
+.headerlogo
+	width: 156px
+	height: 60px
+.btn1 
+	color: #fff 
+	padding: .5rem 
+	font-size: 2.063rem
+	font-family: "RobotoCondensedRegular"
+	border-radius: 18px 
+	background: linear-gradient(to top, #990000, #ff0000) 
+	border: none 
+	cursor: pointer 
+	transition: .5s 
+	&:hover 
+		transform: scale(1.2)
+.btn2 
+	color: #fff 
+	width: 100%
+	padding: .5rem 
+	font-size: 2rem 
+	border-radius: 18px 
+	background: linear-gradient(to top, #990000, #ff0000) 
+	border: none 
+	cursor: pointer 
+	margin-top: 1.5rem
+	transition: .5s
+	font-family: "RobotoCondensedRegular"
+	&:hover 
+		transform: scale(1.2)
+.medals 
+	display: flex 
+	justify-content: space-between 
+	margin-top: -15%
+	
+.arrw 
+	margin-top: -16%
+.locky 
+	display: inline-flex
+	color: #fff
+	& p
+		font-weight: bold
+.bg-y
+	background: yellow
+	color: #fff
+	padding: .7rem .7rem 0 .7rem
+.bactefh1
+	font-size: 6.75rem
+	color: #336633
+	text-align: center
+	font-family: "NewtonCBold"
+
+.text-y
+	color: #ffff00
+.carder h5
+	font-size: 2.1rem
+	line-height: 0.898
+	color: #ff0000
+	margin-top: 1.25rem
+	font-size: bold
+.carder h6
+	font-size: 1.3rem
+	font-family: "ArialNarrow"
+	text-transform: uppercase
+	color: #336633
+	text-align: center
+	margin-top: .5rem
+	line-height: 1.2
+	font-weight: regular
+.carder p
+	font-size: 1rem
+	color: #999999
+	text-align: center
+	margin-top: 1rem
+	line-height: 1.25rem
+
+.fz17
+	font-size: 1.7rem
+	font-weight: bold
+	letter-spacing: .15rem
+	text-transform: none
+
+.bactefp
+	color: #336633
+	font-size: 1.4375rem
+	text-align: center
+	font-weight: bold
+	font-family: "NewtonCBold"
+.section-top .row
+	align-items: flex-start
+.mn-h
+	align-self: flex-start
+
+.topUl
+	font-size: 1.4375rem
+	list-style: none
+	font-family: "RobotoCondensedRegular"
+	&>li
+		margin-bottom: .5rem
+		color: #fff
+.topUl li:before
+	color: yellow
+	content: '◯'
+	margin-left: -1em
+	display: inline-block
+	width: 1em
+	margin-right: 1rem
+	font-weight: bold
+.sub
+	display: block
+	font-size: 1.4375rem
+	font-family: "ArialNarrowBoldItalic"
+	line-height: 1.174
+	color: #fff
+	margin-left: 2.4375rem
+.section-top
+	background-image: url('../img/tinypng/back1.jpg')
+	background-position: center center 
+	background-repeat: no-repeat
+	background-size: cover
+//jenya
+.bakterii 
+	margin: auto 
+.backteriih2 
+	border: 5px solid #ff3333 
+	font-size: 2rem 
+	margin: auto 
+	color: #ff3333 
+	line-height: 1.209
+	text-align: left
+.containerbact 
+	display: grid 
+	grid-template-columns: 1fr 1fr 
+	grid-template-rows: 1fr 1fr 
+	grid-gap: 0 
+	width: 100% 
+	margin: auto 
+.bactimg 
+	grid-column: 1 
+	grid-row: 1 / 3 
+	justify-content: end
+.bactyellowtxt 
+	grid-column: 2 
+	grid-row: 1 
+	margin-left: -3rem 
+	background: yellow 
+	width: 64% 
+	font-size: 4.059375rem
+	margin-bottom: 0 
+	padding-left: .75rem
+	padding-top: .75rem
+	line-height: 0.998
+
+.bactgraytxt 
+	grid-column: 2 
+	grid-row: 2 
+	background: #cccccc 
+	padding-top: 2.5rem
+	padding-left: 3.5rem 
+	margin-bottom: 0 
+	width: 80% 
+	font-size: 1.094375rem 
+
+.bactgraytxt1 
+	grid-column: 2 
+	grid-row: 2 
+	background: #cccccc 
+	padding-top: 2.5rem
+	padding-left: 3.5rem 
+	margin-bottom: 0 
+	width: 80% 
+	font-size: 1.094375rem
+//!jenya
+//form main
+.former
+	padding: 0
+.carder
+	position: relative
+	display: flex
+	flex-direction: column
+	min-width: 0
+	word-wrap: break-word
+	background-color: #fff
+	background-clip: border-box
+	border-radius: .75rem
+	box-shadow: 0 0 2px rgba(0,0,0,0.5)
+
+.carder-body
+	flex: 1 1 auto
+	padding: 1.25rem
+.bg-yel
+	background: yellow
+	border: 1px solid yellow
+	border-top-left-radius: 0.75rem
+	border-top-right-radius: 0.75rem
+.input-group
+	width: 85%
+	margin-left: 1.675rem
+.mfl	
+	padding-left: 2.25rem
+	& h6
+		text-align: left
+.mfr
+	padding-right: 2.25rem
+	padding-left: .75rem
+//!form main
+//bg_3
+.pl-6
+	padding-left: 4rem
+.input-group-text
+	background-color: #fff
+	border-right: 0px
+//дублирующийся блок 
+.bg_3 
+	background-image: url('../img/back3.jpg') 
+	background-position: center center 
+	background-repeat: no-repeat 
+	background-size: cover 
+	margin-top: 5rem 
+.bg_3_body 
+	display: grid 
+	grid-template-columns: repeat(3, 1fr) 
+	grid-template-rows: 0.2fr 1.3fr 1fr 0.2fr 
+.imagin 
+	justify-self: center 
+	align-self: center 
+	grid-column: 2 
+	grid-row: 1 / 5 
+.timer2 
+	grid-column: 1 
+	grid-row: 3 
+	background: #fff 
+	border-radius: 0 0 10px 10px 
+	margin: 0 2rem 2rem 2rem 
+.stocker 
+	grid-column: 1 
+	grid-row: 2 
+	border-radius: 10px 10px 0 0 
+	display: grid 
+	grid-template-columns: 1fr 1fr 
+	text-align: center 
+	padding: 1rem 
+	margin: 4rem 2rem 0 2rem 
+.stocker h5 
+	grid-column: 1 / 3 
+	grid-row: 1 
+.stocker h6 
+	grid-column: 1 
+	grid-row: 2 
+	align-self: center 
+.stocker p 
+	grid-column: 2 
+	grid-row: 2 
+	align-self: center 
+	font-size: 1.375rem
+	font-family: "ArialNarrow"
+	line-height: 0.992
+	text-transform: uppercase
+.fnt_delcross
+	font-size: 2rem
+	line-height: 1
+.forma 
+	grid-column: 3 
+	grid-row: 2 
+	background: #fff 
+	border-radius: 15px 
+	margin: 2rem 2rem 0 
+	align-self: end 
+	padding-bottom: 1rem 
+
+.buttoner 
+	grid-column: 3 
+	grid-row: 3 
+	padding: 1.5rem 
+	display: grid 
+	justify-items: center 
+	align-items: center 
+	padding: 0 
+
+.buttoner p 
+	align-self: center 
+	margin-left: 1rem 
+	color: #000 
+.timer2, .timer3, .timer4
+	margin-top: -1.5rem
+.timer-js 
+	text-align: center 
+	margin: auto 
+	font-size: 1.188rem 
+	& p 
+		font-family: "RobotoCondensedRegular"
+		color: #000 
+		line-height: 1.421
+		text-transform: uppercase
+		font-size: 1rem
+.imagin 
+	align-self: center 
+	grid-column: 2 
+	grid-row: 1 / 5 
+.timer-counter
+	display: inline-block
+	margin-right: 19px
+	margin-top: 5px
+	&>span 
+		font-family: 'ArialNarrow'
+		display: inline-block
+		width: 64px
+		height: 64px
+		line-height: 63px
+		background: #fff
+		color: #000
+		font-size: 3.75rem
+		border-radius: 5px
+		border: 2px solid #365514
+	& p
+		text-transform: none
+		font-size: 0.8125rem
+//!bg_3
+.del-cross 
+	display: block 
+	position: relative
+	overflow: hidden
+	&:before, .del-cross:before
+		content: '' 
+		position: absolute 
+		display: block 
+		width: auto 
+		height: auto 
+		left: 0 
+		top: 0 
+		right: 0 
+		bottom: 0 
+		background: rgba(0, 0, 0, 0) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJzdHJva2U6IHJnYmEoMjU1LDAsMCwwLjkpOyBzdHJva2Utd2lkdGg6IDEuNSIgPjxsaW5lIHgyPSIxMDAlIiB5Mj0iMTAwJSIgIC8+PGxpbmUgeTE9IjEwMCUiIHgyPSIxMDAlIiAgLz48L3N2Zz4=)
+		background-repeat: no-repeat
+		background-size: 100% 100%
+/*parazite*/
+.parazite h3
+	text-align: center
+	font-size: 2.75rem
+	color: rgb(255, 51, 51)
+	font-weight: bold
+	line-height: 1.5
+
+.bg2
+	background-image: url('../img/9x/back2.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	& span
+		align-items: flex-start
+		width: 100px
+		text-align: right
+		margin-left: -8%
+		line-height: 1.091
+		font-family: "ArialNarrow"
+
+.bg2 .col-md-4
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	width: 100
+/* end parazite*/
+.parasitesect 
+	padding-top: 5rem 
+	color: #fff
+.parasiteh2 
+	color: #ff3333 
+	font-size: 3rem
+.cherez p 
+	margin-top: 1rem
+	font-size: 1.375rem
+	color: #000 
+	text-align: left
+	line-height: 1.5rem
+	font-family: "ArialNarrow"
+	margin-left: 4%
+	
+.bg_intro
+	background-image: url('../img/bolezni_vyzyv_gelm/subatroficheskij-gastrit.png')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	height: 100vh
+.bolezni h3
+	color: #ff3333
+	text-align: center
+	font-size: 2.875rem
+.bolezni h4
+	color: #ff3333
+	text-align: center
+	font-size: 1.875rem
+
+.bolezni p
+	background-color: rgb(204, 204, 204)
+	padding: .75rem
+
+.bolezni footer
+	background-color: rgb(255, 0, 0)
+	box-shadow: 0px 1px 13.68px 4.32px rgba(35, 31, 32, 0.69)
+.bolezni footer h3, .bolezni footer p
+	color: #fdd5b0
+	background-color: transparent
+.bolezni footer p
+	font-size: 1.5rem
+	font-family: "RobotoCondensedRegular"
+.text-g
+	color: #99cc33
+.percent ul 
+	list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAtCAMAAAAA2mLvAAAAk1BMVEUAAAD/FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//FR//Fh//FR//Fh//FR//FR//FR//FR//FR//FR8d4JgxAAAAMHRSTlMA4LwmDRbs6NnUtYiEZ1kc+/Tw0XVvRSEIAvzkx8SxqaOWaVRPNzXLnIt9YEo/MAS8Zp2XAAABFklEQVQ4y42U2XKCQBBFexAQFxZRg2gSd7Mn/f9fl7K8kyIVMrfPCzycapjb0y0W4nz3tKkzi7pM9YrjZvOgNwZUTWZQF0LxVSOuTqC6lqoF1Kqk6kDBnVA2UKdcHdvPtYA6/KLqp5qb0A7t53q0nyuHOhdzsuuEu87+s89QX7l6sjchrm7qbMXdCGU/uHqAOuFqCXUknDnc0n67Cq4mULf/ZdT8ud9pv3nZpZr5JI8oe+5Vp3pljy+sQ3G9oFCMPwjFpd0rfQrH5SelbkVW2F1L6WeroPgZm3s2K+rkDW8JXUM6wvPA2+/JDFvTsjnOCn5nEE4NGQTZd12yDi4dNTfsDfOMHxVUsVB8F96F04yztHYRm7BvwNdR5HWWmkYAAAAASUVORK5CYII=')
+	margin: 0 3% 0 5%
+	font-weight: bold
+.bg_gr
+	border-radius: 10px
+	padding: 1rem 0 1rem 0
+	background-color: rgb(204, 255, 153)
+ 	box-shadow: 0px 0px 9px 0px rgba(35, 31, 32, 0.5)
+
+.headsize2 
+	padding-top: 1.5rem
+	font-size: 2.5625rem
+	line-height: 1.171
+	font-weight: bold
+	text-transform: uppercase
+	padding-bottom: 2rem
+.percent .headsize
+	margin: 1.5rem
+.headsize 
+	font-size: 2.5625rem
+	line-height: 1.171
+	font-weight: bold
+	text-align: center
+.percent p
+	font-size: 1.8125rem
+	text-align: center
+	font-weight: bold
+.why h3
+	text-align: left
+.txt-grn
+	color: #99cc33
+	text-shadow: 0px 0px 9px 0px rgba(35, 31, 32, 0.5)
+.why figcaption
+	font-family: "RobotoBoldCondensed"
+
+
+//18:13
+.sickness 
+	display: grid 
+	grid-template-rows: repeat(7, 100px) 
+	margin-bottom: .7rem 
+.paritem1 
+	display: grid 
+	grid-column: 1 / 2 
+	grid-row: 1 
+	width: 80% 
+	margin: auto 
+	justify-self: end 
+.paritem2 
+	display: grid 
+	grid-column: 1 / 3 
+	grid-row: 3 
+	width: 50% 
+.paritem3 
+	display: grid 
+	grid-row: 6 
+	grid-column: 1 
+	width: 60% 
+.paritem4 
+	display: grid 
+	grid-row: 1 
+	grid-column: 5 
+	width: 70% 
+	justify-self: end 
+.paritem5 
+	display: grid 
+	grid-row: 4 
+	grid-column: 5 
+	justify-self: end 
+	width: 60% 
+.paritem6 
+	margin-top: 3rem 
+	display: grid 
+	grid-row: 6 
+	grid-column: 5 
+	justify-self: end 
+	width: 75% 
+	text-align: center 
+.paritemimg 
+  width: 350%
+  grid-row: 4 / 8
+  justify-self: center
+  align-self: end
+.sickness h4 
+	line-height: 2rem
+//!18:13
+.containeract 
+	margin: auto 
+	display: grid 
+	grid-template-columns: repeat(22, 1fr) 
+	grid-template-rows: 150px repeat(16, 60px) 
+	text-align: center 
+	
+.containeract span 
+	line-height: 1.548 
+	font-weight: bold 
+	font-size: 1.7rem 
+.acth2
+	font-size: 2.5625rem 
+	justify-self: center 
+	align-self: center 
+	grid-column: 3 / 20 
+	grid-row: 1 
+.act-item1 
+	grid-column: 4 / 8 
+	grid-row: 4 / 7 
+.act-item2 
+	grid-column: 2 / 6 
+	grid-row: 6 / 10 
+	align-self: center 
+	padding-left: 1rem 
+.act-item3 
+	grid-column: 1 / 5 
+	grid-row: 9 / 13 
+	padding-right: 2rem 
+	padding-top: .2rem 
+.act-item4 
+	grid-column: 2 / 6 
+	grid-row: 11 / 15 
+	padding-top: 1.5rem 
+.act-item5 
+	display: grid 
+	grid-column: 5 / 9 
+	grid-row: 13 / 16 
+	align-self: end 
+.act-item6 
+	display: grid 
+	grid-column: 15 / 19 
+	grid-row: 4 / 7 
+	padding-right: 3rem 
+.act-item7 
+	grid-column: 16 / 21 
+	grid-row: 6 / 10 
+	align-self: end 
+.act-item8 
+	grid-column: 18 / 24 
+	grid-row: 9 / 12 
+	align-self: end 
+.act-item9 
+	grid-column: 15 / 19 
+	grid-row: 13 / 16 
+.actimg 
+	margin-top: 20px 
+	grid-column: 4 / 18 
+	grid-row: 4 / 16
+// mnenie
+.mnenie
+	background-image: url('../img/sostav/blue.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+
+.mnenie .flex-img
+	align-self: flex-end
+	margin-bottom: 2rem
+	padding-top: 0 
+
+
+.no-pd
+	padding: 0
+.pl-7
+	padding-left: 4.5rem
+.d-fl
+	display: flex
+	flex-flow: row
+	font-weight: bold
+.d-fl
+	flex-flow: row
+
+.expertimg-parent
+	order: 1
+	margin: 0
+	padding: 0
+	justify-content: flex-start
+.expertimg1
+	order: 2
+	margin-bottom: 0
+	margin-top: -3.7rem
+	margin-left: -1rem
+	height: 110%
+
+.expertimg2
+	display: flex
+	order: 2
+	width: 30%
+	align-self: flex-end
+	margin: 0 3rem 2rem 0
+.expert-child
+	display:flex
+	flex-flow: row wrap
+	order: 2
+	padding: 0
+	margin-left: 3rem
+	justify-self: flex-end
+.gg
+	margin-top: auto
+	font-family: "ArialNarrowBoldItalic"
+	font-size: 1.375rem
+.gg2
+	font-family: "ArialNarrow"
+	font-weight: bold
+	font-size: 1.325rem
+.headsize-l 
+	font-size: 2.5625rem
+	line-height: 1.098
+	font-weight: bold
+	padding: 1.5rem 0 .5rem 0
+	letter-spacing: -.1rem
+//!mnenie
+// luchshe
+.txt-grnd
+	color: rgb(51, 102, 51)
+.luchshe h6
+	font-size: 2.125rem
+	line-height: 1.412
+	font-weight: bold
+	text-align: center
+	margin: auto
+.luchshe_y
+	padding: 2rem
+	border-radius: 10px
+	background-color: rgb(51, 102, 51)
+	box-shadow: 0px 0px 51.87px 5.13px rgba(35, 31, 32, 0.67)
+	min-height: 660px
+	margin-left: 1.5rem
+	& ul
+		list-style: none
+		&>li
+			margin-bottom: .5rem
+			font-size: 1.125rem
+			font-weight: bold
+			line-height: 1.6
+			color: #fff
+		& li:before
+			color: white
+			content: '✔'
+			font-size: 3rem
+			margin-left: -.85em
+			margin-top: -1rem
+			display: inline-block
+			font-weight: bold
+
+.luchshe_x
+	padding: 2em
+	border-radius: 10px
+	background-color: rgb(204, 204, 204)
+	box-shadow: 0px 0px 51.87px 5.13px rgba(35, 31, 32, 0.67)
+	min-height: 660px
+	margin-left: 1.5rem
+.luchshe_x ul 
+	position: relative
+	list-style: none
+	margin: 0 3% 0 3%
+	color: #000
+	& li
+		font-size: 1.125rem
+		font-weight: bold
+		line-height: 2.6
+.luchshe_x ul li:before
+	color: white
+	content: '✖'
+	font-size: 1.8rem
+	margin-top: -.5rem
+	margin-left: -2em
+	margin-right: .5rem
+	display: inline-block
+	font-weight: bold
+	width: 1.8em
+	height: 1.8em
+	line-height: 1.8em
+	padding: 0
+	color: #fff
+	background: red
+	font-weight: 700
+	text-align: center
+	border-radius: .9em
+// !luchshe
+//week
+.week
+	text-align: center
+	& figcaption
+		font-size: 1.375rem
+		max-width: 230px
+		font-weight: bold
+.redd
+	color: #ff0000
+	font-size: 1.75rem
+
+.week-mt5
+	margin-top: -5rem
+
+//!week
+//sp_prim
+.sp_prim
+	background-image: url('../img/sposob_primenenia/back10.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 457px
+	margin-top: -30px
+.w-41
+	width: 41%
+.sp_prim1
+	& p
+		font-weight: bold
+		line-height: 1.739
+		font-size: 1.4375rem
+.zakaz .headsize
+	font-size: 4.375rem
+//!sp_prim
+//row sposob
+.zakaz figure
+	text-align: center
+//!row
+// testimonials
+.slick-cont
+	background-image: url('../img/sposob_primenenia/green_valley.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 458px
+.slick-item
+	text-align: center
+	& img
+		padding-bottom: 1rem
+		padding-top: 2rem
+	& h6
+		font-size: 0.875rem
+		color: rgb(255, 0, 0)
+		line-height: 1.286
+	& p
+		text-align: justify
+		font-weight: bold
+.fwb
+	font-weight: bold
+
+//jenya
+.question 
+	display: flex 
+	flex-flow: row wrap 
+	justify-content: center 
+	align-items: flex-end 
+	min-height: 500px
+	&	figcaption
+		margin-top: 1rem
+		text-transform: uppercase
+		font-family: "RobotoCondensedRegular"
+		line-height: 1.32
+		text-align: center
+		font-size: 1.5rem
+.question div:nth-child(1) 
+	align-self: flex-start 
+.question div:nth-child(2) 
+	margin-bottom: 1.7rem 
+.question div:nth-child(3) 
+	align-self: flex-start 
+.question div:nth-child(5) 
+	align-self: flex-start 
+.margy1 
+	margin-top: 1.6rem 
+.margy2 
+	margin-top: 2rem
+//!jenya
+@import "media"
