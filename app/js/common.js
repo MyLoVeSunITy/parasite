@@ -61,6 +61,8 @@ function setTimePage(h,m,s) {
 	element3.innerHTML = "<p class=mt-4>До конца акции осталось:</p><div class='timer-counter ml-3'><span class=hours>"+h+"</span><p>часов</p></div><div class=timer-counter><span class=minutes>"+m+"</span><p>минут</p></div><div class=timer-counter><span class=seconds>"+s+"</span><p>секунд</p></div>";
 	var element4 = document.getElementById("timer4");
 	element4.innerHTML = "<p class=mt-4>До конца акции осталось:</p><div class='timer-counter ml-3'><span class=hours>"+h+"</span><p>часов</p></div><div class=timer-counter><span class=minutes>"+m+"</span><p>минут</p></div><div class=timer-counter><span class=seconds>"+s+"</span><p>секунд</p></div>";
+	var element5 = document.getElementById("timer5");
+	element5.innerHTML = "<p class=mt-4>До конца акции осталось:</p><div class='timer-counter ml-3'><span class=hours>"+h+"</span><p>часов</p></div><div class=timer-counter><span class=minutes>"+m+"</span><p>минут</p></div><div class=timer-counter><span class=seconds>"+s+"</span><p>секунд</p></div>";
 	$("input[type='tel']").inputmask("+7(999)999-99-99"); 
 }
 function showMessage(timerId) { 
