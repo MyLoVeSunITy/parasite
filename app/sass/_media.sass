@@ -4,8 +4,21 @@
 +media-breakpoint-down(xl)
   body
     font-size: 16px
+  .dnone2 
+    display: none
+  .dnone3
+    display: block
+  .formacont
+    background: #fff 
+    border-radius: 15px
+    margin: 3rem 1rem 1rem 1rem
+    height: 220px
+
+ 
+
 //Large: ≥992px
 +media-breakpoint-down(lg)
+
   .btn1
     font-size: 1.8rem
     padding: .5rem 0 .5rem 0
@@ -16,6 +29,7 @@
     font-size: 1.5rem
     padding: .4rem
     margin-top: 1.5rem
+    margin-bottom: 1.5rem
   .parasiteh2
     font-size: 2.5rem
   .backteriih2
@@ -28,6 +42,24 @@
     justify-content: center
     align-items: center
     padding: 1rem
+  .bg_3_body
+    grid-template-rows: auto
+    grid-template-columns: auto
+    padding-top: 2rem
+    grid-column-gap: 2rem
+  .formacont
+    background: #fff 
+    border-radius: 15px
+    margin: 3rem 1rem 1rem 1rem
+    height: 220px
+  .forma
+    grid-row: 1 / 3 
+  .timer2
+    justify-self: center
+    height: 100%
+    width: 90%
+    margin: 0
+    grid-row: 2  
   .timer-js
     width: 95%
   .timer-js span
@@ -38,8 +70,15 @@
     justify-content: space-around
     align-items: center
     font-size: 1.2rem
+  .stocker
+    justify-self: center
+    height: 100%
+    width: 90%
+    align-self: end
+    margin: 0
+    grid-row: 1
   .stocker h5
-    font-size: 1.7rem
+    font-size: 2rem
   .stocker h6
     font-size: 1rem
   .stocker p
@@ -212,6 +251,10 @@
     align-self: flex-start
 //Medium: ≥768px
 +media-breakpoint-down(md)
+  .dnone3
+    display: block
+  .dnone2
+    display: none
   .headerow
     width: 90%
     margin: auto
@@ -254,7 +297,9 @@
     width: 100%
     font-size: 1.2rem
     padding: .4rem 
-    margin-top: 1.5rem
+    margin-top: 1rem
+    margin-bottom: 0
+
   .parasiteh2
     font-size: 1.9rem  
   .cherez
@@ -291,14 +336,18 @@
     font-size: 1rem 
     padding: 1.2rem
   .bg_3_body
-    grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: 0.2fr 1fr 1fr 0.2fr
-    grid-column-gap: 10px 
+    grid-template-columns: repeat(3, auto)
+    grid-template-rows: auto
+    grid-column-gap: 2rem 
+    padding-top: 2rem
   .stocker
     margin: 0
     height: 100%
+    width: 100%
     align-self: end
     justify-self: center
+    grid-row: 1
+    margin-bottom: -1.5rem
     & p
       font-size: .9rem
     & h5
@@ -307,11 +356,13 @@
       font-size: 2rem
   .timer2
     width: 100%
+    padding-bottom: 1rem
+    padding-top: 0
     height: 80%
-    margin: 0
     justify-self: center
   .timer-js
     width: 95%
+    height: 150px
     margin: 0
   .timer-js span
     margin: 0
@@ -321,27 +372,34 @@
     justify-content: space-around
     align-items: center 
     font-size: 1.2rem 
-  .timer-counter
-    width: 40px
-    height: 40px
+
   .headsize-l
     height: 30%
   .d-fl
     flex-flow: row
   .expert-img
     height: 40px
+  .formacont
+    background: #fff 
+    border-radius: 15px
+    margin: -1rem -1rem 
+    height: 200px 
   .forma
     width: 100%
     margin: 0
     align-self: start
     padding: 1rem
-    grid-row: 2 / 4
+    grid-row: span 2
+    margin-top: 1.3rem
+
   .buttoner
     height: 50%
+    margin: -1rem -1rem 0
     align-self: center
     & img
       width: 15%
       padding: .1rem
+
   .former
     font-size: .8rem
     padding-top: 1rem
@@ -647,6 +705,7 @@
     padding-top: 2rem
     padding-bottom: 2rem
     width: 70%
+    margin: auto
   .imagin
     grid-column: 1 
     grid-row: 1
@@ -673,6 +732,14 @@
     margin: 0
     border-radius: 0
     padding: 1rem
+  .former
+    font-size: 1rem
+
+
+  .formacont
+    background: #fff 
+    border-radius: 0 0 15px 15px 
+    margin: -1rem -1rem 0 
   .timer2
     grid-column: 1
     grid-row: 4
@@ -681,8 +748,10 @@
     width: 100%
     height: 100%
   .buttoner 
+    margin: -1rem -1rem 0
+  .buttoner 
     grid-column: 1 
-    grid-row: 5
+    grid-row: 45
   .btn2
     margin-bottom: 2rem
   .carder h5
@@ -912,6 +981,10 @@
   .marginal
     margin: auto auto 5rem auto 
 +media-breakpoint-down(xs)
+  .dnone2 
+    display: none
+  .dnone3
+    display: block
   .btn1
     font-size: 1.7rem
     padding: .5rem 0 .5rem 0 
@@ -939,7 +1012,7 @@
     width: 100%
     font-size: 1.6rem
     padding: .4rem 
-    margin-top: 1.5rem
+    margin-top: 5rem
   .carder h6
     font-size: 1rem
   .fz17
@@ -1004,11 +1077,13 @@
     text-align: center
   .bg_3_body 
     display: grid 
-    grid-template-columns: 1fr 
-    grid-template-rows: 1fr repeat(4, .3fr)
+    grid-template-columns: auto
+    grid-template-rows: repeat(7, auto)
     padding-top: 2rem
-    padding-bottom: 2rem
+    padding-bottom: 15rem
     width: 100%
+    justify-content: center
+    justify-items: center
   .imagin
     grid-column: 1 
     grid-row: 1
@@ -1020,34 +1095,50 @@
     grid-row: 2
     width: 100%
     height: 100%
-    padding: 0 1rem 0 0 
+    padding: 2rem 1rem 0 0 
     margin: 0
     display: grid
     justify-items: center
+    max-width: 400px
+
   .fnt_delcross
     font-size: 1.3rem
     margin-right: 1rem
+  .formacont
+    background: #fff 
+    border-radius: 0 0 15px 15px 
+    margin: -1rem -1rem 0 
   .forma
-    display: grid
-    align-items: center
     grid-column: 1
     grid-row: 3
-    align-self: stretch
     margin: 0
     border-radius: 0
-    padding: 1rem
+    margin-bottom: 0
+    max-width: 400px
+    align-self: start
+    height: 100%
+
+   
   .timer2
     grid-column: 1
-    grid-row: 4
+    grid-row: 4 / span 3
     padding: 0
     margin: 0
     width: 100%
     height: 100%
+    align-self: start
+    justify-self: center
+  .timer-js
+    width: 100%
+    height: 85%
+
+  .locky
+    margin-bottom: 0
   .buttoner 
-    grid-column: 1 
-    grid-row: 5
+    margin: -1rem -1rem 0
   .btn2
-    margin-bottom: 2rem
+    margin-bottom: -15rem
+    margin-top: 0
   .carder h5
     font-size: 1.6rem
   .carder h6
@@ -1268,11 +1359,9 @@
 
   .zakaz .headsize
     font-size: 1.5rem
-
   .medals
     padding-top: 3rem
   .arrw
     display: none
-
   .marginal
     margin-bottom: 5rem
