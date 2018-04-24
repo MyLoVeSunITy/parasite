@@ -13,8 +13,8 @@ window.onload = function() // дожидаемся загрузки страни
      initializeTimer(); // вызываем функцию инициализации таймера
 }
 function initializeTimer() {
-	var endDate = new Date(2018,4,17); // получаем дату истечения таймера
-	var currentDate = new Date(); // получаем текущую дату
+	var currentDate = new Date();
+	var endDate = new Date(currentDate.getTime() + (21 * 35 * 60 * 1000));//24*60*60*1000
 	var seconds = (endDate-currentDate) / 1000; // определяем количество секунд до истечения таймера
 	if (seconds > 0) {
 		var minutes = seconds/60; // определяем количество минут до истечения таймера
@@ -61,7 +61,7 @@ function setTimePage(h,m,s) {
 	element3.innerHTML = "<p class=mt-4>До конца акции осталось:</p><div class='timer-counter ml-3'><span class=hours>"+h+"</span><p>часов</p></div><div class=timer-counter><span class=minutes>"+m+"</span><p>минут</p></div><div class=timer-counter><span class=seconds>"+s+"</span><p>секунд</p></div>";
 	var element4 = document.getElementById("timer4");
 	element4.innerHTML = "<p class=mt-4>До конца акции осталось:</p><div class='timer-counter ml-3'><span class=hours>"+h+"</span><p>часов</p></div><div class=timer-counter><span class=minutes>"+m+"</span><p>минут</p></div><div class=timer-counter><span class=seconds>"+s+"</span><p>секунд</p></div>";
-	$("input[name='phone']").inputmask("+7(999)999-99-99"); 
+	$("input[type='tel']").inputmask("+7(999)999-99-99"); 
 }
 function showMessage(timerId) { 
 	alert("Время истекло!");
